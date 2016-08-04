@@ -69,6 +69,6 @@ class BackupsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def backup_params
-      params.require(:backup).permit(:origin, :destiny)
+      params.require(:backup).permit(:origin, :destiny, :extension_id)
     end
 end
