@@ -1,5 +1,12 @@
 Rails.application.routes.draw do
   resources :backups
+  resources :backups
+  resources :backups
+  resources :backups
+  resources :backups
+  resources :backups
+  resources :extensions
+  resources :backups
   resources :extensions
   resources :extensions
   resources :backups
