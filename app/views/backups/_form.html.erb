@@ -27,7 +27,7 @@
 	<%= f.label :extension_id %>
 	<br>
 	<%= f.collection_select(:extension_id,
-    Extension.order(:name),
+    @extensions,
     :id, :name, :prompt => true) %>
 
 </div>

@@ -13,7 +13,7 @@ class ExtensionsController < ApplicationController
   end
 
   # GET /extensions/new
-  def new
+  def new  
     @extension = Extension.new
   end
 

@@ -14,11 +14,13 @@ class BackupsController < ApplicationController
 
   # GET /backups/new
   def new
-    @backup = Backup.new
+prepare_form 
+    @backup = Backup.new    
   end
 
   # GET /backups/1/edit
   def edit
+   prepare_form   
   end
 
   # POST /backups
@@ -71,4 +73,12 @@ class BackupsController < ApplicationController
     def backup_params
       params.require(:backup).permit(:origin, :destiny, :extension_id)
     end
+    
+    private
+    def
+      prepare_form
+      @extensions = Extension.order :name   
+      
+    end
+   
 end

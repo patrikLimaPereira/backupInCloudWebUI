@@ -17,7 +17,7 @@
       <tr>
         <td><%= backup.origin %></td>
         <td><%= backup.destiny %></td>
-        <td><%= backup.extension_id %></td>
+        <td><%= backup.extension.name %></td>
         <td><%= link_to 'Show', backup %></td>
         <td><%= link_to 'Edit', edit_backup_path(backup) %></td>
         <td><%= link_to 'Destroy', backup, method: :delete, data: { confirm: 'Are you sure?' } %></td>
