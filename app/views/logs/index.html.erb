@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Logs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Origin</th>
+      <th>Destiny</th>
+      <th>Destiny</th>
+      <th>Name</th>
+      <th>Destiny</th>
+      <th>Hash</th>
+      <th>Folderdestiny</th>
+      <th>Datetimecopyfolderdestiny</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @logs.each do |log| %>
+      <tr>
+        <td><%= log.origin %></td>
+        <td><%= log.destiny %></td>
+        <td><%= log.destiny %></td>
+        <td><%= log.name %></td>
+        <td><%= log.destiny %></td>
+        <td><%= log.hash %></td>
+        <td><%= log.folderDestiny %></td>
+        <td><%= log.dateTimeCopyFolderDestiny %></td>
+        <td><%= link_to 'Show', log %></td>
+        <td><%= link_to 'Edit', edit_log_path(log) %></td>
+        <td><%= link_to 'Destroy', log, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Log', new_log_path %>

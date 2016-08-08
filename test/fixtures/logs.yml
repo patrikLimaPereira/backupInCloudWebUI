@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  origin: MyString
+  destiny: MyString
+  destiny: MyString
+  name: MyString
+  destiny: MyString
+  hash: MyString
+  folderDestiny: MyString
+  dateTimeCopyFolderDestiny: MyString
+
+two:
+  origin: MyString
+  destiny: MyString
+  destiny: MyString
+  name: MyString
+  destiny: MyString
+  hash: MyString
+  folderDestiny: MyString
+  dateTimeCopyFolderDestiny: MyString

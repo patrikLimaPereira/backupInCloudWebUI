@@ -1,0 +1,49 @@
+<%= form_for(@log) do |f| %>
+  <% if @log.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@log.errors.count, "error") %> prohibited this log from being saved:</h2>
+
+      <ul>
+      <% @log.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :origin %><br>
+    <%= f.text_field :origin %>
+  </div>
+  <div class="field">
+    <%= f.label :destiny %><br>
+    <%= f.text_field :destiny %>
+  </div>
+  <div class="field">
+    <%= f.label :destiny %><br>
+    <%= f.text_field :destiny %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :destiny %><br>
+    <%= f.text_field :destiny %>
+  </div>
+  <div class="field">
+    <%= f.label :hash %><br>
+    <%= f.text_field :hash %>
+  </div>
+  <div class="field">
+    <%= f.label :folderDestiny %><br>
+    <%= f.text_field :folderDestiny %>
+  </div>
+  <div class="field">
+    <%= f.label :dateTimeCopyFolderDestiny %><br>
+    <%= f.text_field :dateTimeCopyFolderDestiny %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
